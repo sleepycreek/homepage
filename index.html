@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>stone ocean</title>
+<link rel='stylesheet' href='src/style.css' />
+<script src="src/clock.js"></script>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body onload="startTime()">
+
+
+	<div class="time" id="time">
+				<script>
+					//document.getElementById("main").innerHTML = Date();
+					function updateClock() {
+						var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+						var m = new Date();
+						var dateString =
+						  (days[ m.getDay() ]) + " " +
+						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						  ("0" + m.getDate()).slice(-2) + "/" +
+						  m.getFullYear() +" "+
+						  ("0" + m.getHours()).slice(-2) + ":" +
+						  ("0" + m.getMinutes()).slice(-2) + ":" +
+						  ("0" + m.getSeconds()).slice(-2);
+						
+						// set the content of the element with the ID time to the formatted string
+						document.getElementById('time').innerHTML = dateString;
+
+						// call this function again in 1000ms
+						setTimeout(updateClock, 1000);
+					}
+					updateClock(); // initial call
+				</script>
+			</div>
+
+
+<div id='one'>
+	<ul><h1 class='header'> </h1>
+	<li><a href='http://netflix.com/'>Netflix</a></li>
+	<li><a href='https://www.youtube.com/feed/subscriptions'>Youtube</a></li>
+	<li><a href='http://www.twitch.tv/directory/following'>Twitch</a></li>
+	<li><a href='http://www.hulu.com'>Hulu</a></li>
+	
+	</ul>
+
+	<ul><h1 class='header'> </h1>
+	<li><a href='http://myanimelist.net/mangalist/otter-88'>manga list</a></li>
+	<li><a href='https://kissanime.ru'>kissanime</a></li>
+	<li><a href='http://myanimelist.net/animelist/bigass'>anime list</a></li>
+	<li><a href='https://nyaa.si'>nyaa.si</a></li>
+	<li><a href='https://bato.to'>batoto</a></li>
+	
+	</ul>
+
+	<ul><h1 class='header'> </h1>
+	<li><a href='https://facebook.com'>facebook</a></li>
+	<li><a href='https://twitter.com'>twitter</a></li>
+	<li><a href='https://tumblr.com'>tumblr</a></li>
+	<li><a href='https://4chan.org'>4chan</a></li>
+	<li><a href='https://reddit.com/r/stardustcrusaders'>stardust crusaders</a></li>
+	<li><a href='https://reddit.com/r/anime'>/r/ - anime</a></li>
+	</ul>
+	
+	<ul><h1 class='header'> </h1>
+	<li><a href='https://sug.rocks'>watchlist</a></li>
+	<li><a href='https://nanami-tan.info'>nanami</a></li>
+	<li><a href='https://catbox.moe'>catbox</a></li>
+	<li><a href='http://0x16.cf/comfy-sounds/'>comfy</a></li>
+	<li><a href='http://edenofthewest.com/'>eden</a></li>
+	</ul>
+	
+	<ul><h1 class='header'> </h1>
+	<li><a href='http://steam.tools/'>steam tools</a></li>
+	<li><a href='https://steamdb.info/sales/'>steam sales</a></li>
+	<li><a href='https://humblebundle.com'>humble bundle</a></li>
+	<li><a href='https://www.tesgeneral.com/'>tesgenerals</a></li>
+	
+	</ul>
+	
+	
+
+</div>
+ <div id='two'>
+	<ul><h1 class='header'> </h1>
+	<li><a href="https://www.hulu.com/brooklyn-nine-nine">Brooklyn Nine-Nine</a></li>
+	<li><a href="https://www.hulu.com/superstore">Superstore</a></li>
+	<li><a href="http://www.watchepisodes4.com/broad-city">Broad City</a></li>
+
+	
+	</ul>
+
+	<ul><h1 class='header'> </h1>
+<li><a href='https://www.britbox.com/show/Broken_14630'>Broken</a></li>
+	<li><a href='https://bato.to/comic/_/comics/jojos-bizarre-adventure-part-6-stone-ocean-r6271'>Stone Ocean</a></li>
+	<li><a href='https://bato.to/comic/_/comics/one-piece-r39'>One Piece</a></li>
+
+	
+	</ul>
+
+</div>
